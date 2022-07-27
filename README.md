@@ -37,7 +37,7 @@ To start using the adapter you need to provide config from Pinata:
 ```elixir
 config :ex_pinata,
   api_key: "YOUR_PINATA_API_KEY",
-  api_token: "YOUR_PINATA_API_KEY
+  api_token: "YOUR_PINATA_API_KEY"
 ```
 
 ## Usage 
