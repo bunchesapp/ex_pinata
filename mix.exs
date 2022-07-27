@@ -4,10 +4,10 @@ defmodule Pinata.MixProject do
   def project do
     [
       app: :ex_pinata,
-      version: "1.0.0",
+      version: "1.0.1",
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
-      source_url: "https://github.com/m1ome/ex_pinata",
+      source_url: "https://github.com/bunchesapp/ex_pinata",
       description: description(),
       package: package(),
       deps: deps()
@@ -40,7 +40,7 @@ defmodule Pinata.MixProject do
       name: "ex_pinata",
       files: ~w(lib mix.exs README.md LICENSE),
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/m1ome/ex_pinata"}
+      links: %{"GitHub" => "https://github.com/bunchesapp/ex_pinata"}
     ]
   end
 end

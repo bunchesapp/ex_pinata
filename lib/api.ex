@@ -13,6 +13,6 @@ defmodule Pinata.API do
     ]
   end
 
-  defp api_key(), do: Application.get_env(:pinata, :api_key) || ""
-  defp api_token(), do: Application.get_env(:pinata, :api_token) || ""
+  defp api_key(), do: Application.get_env(:ex_pinata, :api_key) || ""
+  defp api_token(), do: Application.get_env(:ex_pinata, :api_token) || ""
 end

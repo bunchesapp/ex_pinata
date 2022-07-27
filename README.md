@@ -7,18 +7,35 @@
 Adapter for [pinata.cloud](https://www.pinata.cloud/)
 
 ## Installation
-
+Add `ex_pinata` to your dependencies in `mix.exs`.
 ```elixir
 def deps do
   [
-    {:ex_pinata, "~> 1.0.0"}
+    {:ex_pinata, "~> 1.0.1"}
   ]
 end
 ```
 
-To start using adapter you should provide config:
+Add `ex_pinata` as an extra application in `mix.exs`.
 ```elixir
-config :pinata,
+def application do
+    [
+      extra_applications: [
+        :logger,
+        :ecto,
+        ...
+        :ex_pinata,
+        ...
+        :telemetry,
+      ],
+      mod: {MyApp, []}
+    ]
+  end
+```
+
+To start using the adapter you need to provide config from Pinata:
+```elixir
+config :ex_pinata,
   api_key: "YOUR_PINATA_API_KEY",
   api_token: "YOUR_PINATA_API_KEY
 ```
